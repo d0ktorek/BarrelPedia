@@ -845,6 +845,7 @@ document.getElementById('file-upload').addEventListener('change', function() {
         '914': { title: 'Real Energy Star', desc1: 'Date: 11/01/2026', desc2: 'Author: Panda' }
     };
 
+    
     document.querySelectorAll('.barrel-image').forEach(img => {
         img.addEventListener('mouseenter', (e) => {
             const barrelId = img.getAttribute('id');
