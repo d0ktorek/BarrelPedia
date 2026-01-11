@@ -842,6 +842,7 @@ document.getElementById('file-upload').addEventListener('change', function() {
         '911': { title: 'Shgabbarrel', desc1: 'Date: 15/08/2025', desc2: 'Author: Schrottii' },
         '912': { title: 'Thisbarrelisbtier', desc1: 'Date: 01/07/2024', desc2: 'Author: Schrottii' },
         '913': { title: 'Tuxedovasion', desc1: 'Date: 24/11/2025', desc2: 'Author: Schrottii' }
+        '914': { title: 'Real Energy Star', desc1: 'Date: 11/01/2026', desc2: 'Author: Panda' }
     };
 
     document.querySelectorAll('.barrel-image').forEach(img => {
