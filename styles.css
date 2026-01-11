@@ -8,15 +8,59 @@ body {
     padding: 20px;
 }
 
+.header-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
 h1 {
     text-align: center;
     font-size: 3em;
-    margin-bottom: 20px;
+    margin: 0;
     color: #1869be;
     background: linear-gradient(to right, #084CFB, #ADF3FD);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.filter-buttons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #4a6fa5, #3a5a8f);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    background: linear-gradient(45deg, #3a5a8f, #2a4a7f);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.filter-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.filter-btn.active {
+    background: linear-gradient(45deg, #084CFB, #ADF3FD);
+    box-shadow: 0 4px 15px rgba(8, 76, 251, 0.4);
 }
 
 .image-gallery {
@@ -28,8 +72,8 @@ h1 {
 }
 
 .image-gallery img {
-    max-width: 100px;
-    height: auto;
+    max-width: 88.5px;
+    height: 133px;
 }
 
 .image-container {
@@ -45,6 +89,9 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 1000;
+    max-width: 250px;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .tooltip h2 {
@@ -85,8 +132,9 @@ h1 {
 
 #open-modal-btn {
     position: absolute;
-    top: 53px;
-    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
     padding: 12px 30px;
     background: linear-gradient(45deg, #4a6fa5, #3a5a8f);
     color: white;
@@ -97,11 +145,18 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 #open-modal-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #3a5a8f, #2a4a7f);
+    transform: translateY(calc(-50% - 2px));
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#open-modal-btn:active {
+    transform: translateY(-50%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Modal - zaktualizowane style */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarrelPedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <button id="open-modal-btn">PUBLIC YOUR BARREL</button>
+        <h1>BarrelPedia</h1>
+        <div class="filter-buttons">
+            <button id="not-in-game-btn" class="filter-btn">Not-In-Game</button>
+            <button id="in-game-btn" class="filter-btn">In-Game</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container">
+            <form id="barrel-form">
+                <div class="input-container">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="date" placeholder="dd/mm/yyyy" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="author" placeholder="Author" required>
+                </div>
+                
+                <div class="buttons-group">
+                    <label for="file-upload" class="file-upload-label">CHOOSE FILE</label>
+                    <input type="file" id="file-upload" required>
+                    <button type="submit" class="submit-btn">SEND</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="image-gallery">
+    </div>
+    
+    <div class="tooltip" id="tooltip">
+        <h2 id="tooltip-title"></h2>
+        <p id="tooltip-desc1"></p>
+        <p id="tooltip-desc2"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
